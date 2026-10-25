@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ghost ECC — Politika privatnosti / Privacy Policy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body><main>
+<h1>Ghost ECC</h1>
+<nav><a href="#sr">Srpski</a><a href="#en">English</a><a href="support.html">Podrška / Support</a></nav>
+
+<section id="sr" lang="sr-Latn">
+<h2>Politika privatnosti</h2>
+<p class="muted">Važi od 25. oktobra 2026. Odgovorno lice: Lazar Popovic. Kontakt: <a href="mailto:popoviclazar65@gmail.com">popoviclazar65@gmail.com</a></p>
+
+<p>Ghost ECC je aplikacija za privatne poruke bez naloga, broja telefona i email adrese. Poruke su šifrovane od kraja do kraja (libsignal), pa ih ni mi ni server ne možemo pročitati. Ova politika opisuje tačno koji podaci postoje i gdje.</p>
+
+<h3>Na tvom uređaju</h3>
+<ul>
+<li>Identitetski ključ i kriptografsko stanje, kontakti sa imenima koja im ti daš, ključevi sandučića i podešavanja. Čuvaju se u iOS Keychain-u, samo na tom uređaju, bez iCloud sinhronizacije i bez bekapa.</li>
+<li>Poruke, fotografije, glasovne poruke i fajlovi postoje samo u radnoj memoriji aplikacije, najduže 24 sata, i ne upisuju se na disk. Glasovne poruke se snimaju direktno u memoriju, bez fajla. Fotografijama se prije slanja uklanjaju EXIF i GPS podaci. Primljeni fajl napušta aplikaciju samo ako ga sam sačuvaš ili podijeliš.</li>
+<li>Mikrofon i kamera se koriste samo dok snimaš glasovnu poruku, odnosno skeniraš pozivnicu, i samo uz tvoju iOS dozvolu.</li>
+</ul>
+
+<h3>Na serveru (relay.relayghostecc.net)</h3>
+<ul>
+<li><strong>Sandučići:</strong> nasumični identifikatori i javni ključevi sandučića preko kojih stižu poruke. Nisu povezani sa tvojim Ghost ID-em, imenom ni uređajem. Sandučić koji niko ne koristi 60 dana se briše.</li>
+<li><strong>Pozivnice:</strong> šifrovane jednokratne pozivnice, dok se ne iskoriste ili najduže 7 dana. Server ne može da ih pročita.</li>
+<li><strong>Poruke:</strong> šifrati poruka samo u radnoj memoriji servera, dok ih primalac ne preuzme ili najduže 24 sata. Nikad se ne upisuju na disk.</li>
+<li><strong>Obavještenja</strong> (samo ako ih uključiš): Apple-ov token za obavještenja tvog uređaja, samo u radnoj memoriji servera, da bi server mogao da javi „Nova poruka“. Obavještenje ne sadrži ime, Ghost ID ni sadržaj.</li>
+<li><strong>Tehnički podaci:</strong> kao svaki internet servis, server pri povezivanju vidi IP adresu, vrijeme i veličinu šifrovanih paketa. IP adresa se koristi u memoriji za zaštitu od zloupotrebe (ograničenje broja zahtjeva). Server ne vodi logove pristupa; IP adresa se može pojaviti samo u sistemskim zapisima o greškama, koji se automatski brišu nakon najviše 7 dana.</li>
+</ul>
+
+<h3>Šta ne prikupljamo</h3>
+<p>Nema naloga, broja telefona, email adrese, imenika, lokacije, analitike, reklama, praćenja niti SDK-ova trećih strana. Podatke ne prodajemo i ne dijelimo radi reklamiranja.</p>
+
+<h3>Treća lica</h3>
+<ul>
+<li><strong>Hetzner Online GmbH</strong> (Njemačka) obezbjeđuje server u data centru u Evropskoj uniji.</li>
+<li><strong>Apple</strong> isporučuje obavještenja (ako su uključena) i distribuira aplikaciju; Apple vidi da je uređaju stiglo obavještenje, ali ne i od koga ni šta.</li>
+</ul>
+
+<h3>Tvoja kontrola</h3>
+<p>Kontakt ili poruke možeš obrisati u aplikaciji. „Zaštita → Obriši moj identitet“ trajno briše ključeve, kontakte i podešavanja sa uređaja i sandučiće na serveru (ako je dostupan). Pošto ne znamo ko si, ne možemo povezati zahtjev sa tvojim podacima; brisanje zato radiš sam, u aplikaciji. Za pitanja o privatnosti piši na <a href="mailto:popoviclazar65@gmail.com">popoviclazar65@gmail.com</a>.</p>
+
+<h3>Zahtjevi organa vlasti</h3>
+<p>Ne možemo predati sadržaj poruka, jer ga nemamo u čitljivom obliku. Možemo predati samo ono što server u tom trenutku ima, a to je opisano iznad.</p>
+
+<h3>Djeca</h3>
+<p>Aplikacija nije namijenjena djeci mlađoj od 13 godina.</p>
+
+<h3>Izmjene</h3>
+<p>O izmjenama ove politike obavijestićemo na ovoj stranici; datum na vrhu pokazuje posljednju izmjenu. Izvorni kod aplikacije i servera je javan: <a href="https://github.com/popoviclazar/ghostecc">github.com/popoviclazar/ghostecc</a>.</p>
+</section>
+
+<hr>
+
+<section id="en" lang="en">
+<h2>Privacy Policy</h2>
+<p class="muted">Effective October 25, 2026. Controller: Lazar Popovic. Contact: <a href="mailto:popoviclazar65@gmail.com">popoviclazar65@gmail.com</a></p>
+
+<p>Ghost ECC is a private messaging app without accounts, phone numbers or email addresses. Messages are end-to-end encrypted (libsignal), so neither we nor the server can read them. This policy describes exactly which data exists and where.</p>
+
+<h3>On your device</h3>
+<ul>
+<li>Your identity key and cryptographic state, contacts with the names you give them, mailbox keys and settings. They are stored in the iOS Keychain on that device only, without iCloud sync and without backups.</li>
+<li>Messages, photos, voice messages and files exist only in the app's memory, for 24 hours at most, and are never written to disk. Voice messages are recorded straight into memory, without a file. EXIF and GPS data are removed from photos before sending. A received file leaves the app only if you save or share it yourself.</li>
+<li>The microphone and camera are used only while you record a voice message or scan an invitation, and only with your iOS permission.</li>
+</ul>
+
+<h3>On the server (relay.relayghostecc.net)</h3>
+<ul>
+<li><strong>Mailboxes:</strong> random identifiers and public keys of the mailboxes that messages arrive through. They are not linked to your Ghost ID, name or device. A mailbox unused for 60 days is deleted.</li>
+<li><strong>Invitations:</strong> encrypted one-time invitations, until used or for 7 days at most. The server cannot read them.</li>
+<li><strong>Messages:</strong> encrypted messages held only in the server's memory, until the recipient fetches them or for 24 hours at most. They are never written to disk.</li>
+<li><strong>Notifications</strong> (only if you turn them on): your device's Apple notification token, held only in the server's memory so it can say "New message". A notification contains no name, Ghost ID or content.</li>
+<li><strong>Technical data:</strong> like any internet service, the server sees the IP address, time and size of encrypted packets when you connect. The IP address is used in memory to prevent abuse (rate limiting). The server keeps no access logs; an IP address can appear only in system error records, which are deleted automatically after 7 days at most.</li>
+</ul>
+
+<h3>What we don't collect</h3>
+<p>No accounts, phone numbers, email addresses, address book, location, analytics, ads, tracking or third-party SDKs. We don't sell data or share it for advertising.</p>
+
+<h3>Third parties</h3>
+<ul>
+<li><strong>Hetzner Online GmbH</strong> (Germany) provides the server in a data center in the European Union.</li>
+<li><strong>Apple</strong> delivers notifications (if enabled) and distributes the app; Apple sees that a notification reached the device, but not from whom or what it says.</li>
+</ul>
+
+<h3>Your control</h3>
+<p>You can delete a contact or messages in the app. "Privacy → Delete my identity" permanently deletes keys, contacts and settings from the device and your mailboxes on the server (if reachable). Because we don't know who you are, we cannot match a request to your data, so deletion happens in the app. For privacy questions, write to <a href="mailto:popoviclazar65@gmail.com">popoviclazar65@gmail.com</a>.</p>
+
+<h3>Government requests</h3>
+<p>We cannot hand over message content because we don't have it in readable form. We can only provide what the server holds at that moment, as described above.</p>
+
+<h3>Children</h3>
+<p>The app is not intended for children under 13.</p>
+
+<h3>Changes</h3>
+<p>Changes to this policy will be posted on this page; the date at the top shows the latest change. The source code of the app and server is public: <a href="https://github.com/popoviclazar/ghostecc">github.com/popoviclazar/ghostecc</a>.</p>
+</section>
+</main></body>
+</html>
