@@ -1,4 +1,3 @@
 Drop & Balance website for GitHub Pages.
-Upload EVERYTHING in this folder (including the hidden .nojekyll file) to the
-root of a public GitHub repository named <your-username>.github.io.
-See ../UPUTSTVO_GITHUB_PAGES.txt for step-by-step instructions.
+Upload all files in this folder (no subfolders needed) to the root of the
+public repository popoviclazar.github.io.
