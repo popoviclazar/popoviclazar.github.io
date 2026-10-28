@@ -1,62 +1,16 @@
-:root{
-  --night:#0d1730; --deep:#142347; --mint:#5ef5bd; --ice:#bddbff; --wood:#e8a361; --edge:#76452f;
-  --bg:#f3f7fd; --surface:#ffffff; --text:#14213d; --muted:#4a5a78; --line:#d6e0ef; --link:#0b6b4d;
-  color-scheme:light dark;
-}
-@media (prefers-color-scheme:dark){
-  :root{--bg:#0a1226; --surface:#111d3a; --text:#e9f0fb; --muted:#a9b9d3; --line:#22345c; --link:#5ef5bd;}
-}
+:root{--bg:#090e1a;--card:#111827;--text:#e8edf5;--muted:#9aa4b5;--red:#ff3359;--cyan:#22d3ee;--line:rgba(255,255,255,.09);color-scheme:dark}
+@media (prefers-color-scheme: light){:root{--bg:#f6f7fb;--card:#fff;--text:#111827;--muted:#4b5563;--red:#e11d48;--cyan:#0891b2;--line:rgba(0,0,0,.09);color-scheme:light}}
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--text);
-  font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
-a{color:var(--link);text-underline-offset:3px}
-a:focus-visible{outline:3px solid var(--mint);outline-offset:2px;border-radius:3px}
-.top{background:var(--night);color:#fff;padding:env(safe-area-inset-top,0) 0 0}
-.bar{max-width:760px;margin:0 auto;padding:16px 22px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
-.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:800;
-  font-family:ui-rounded,"SF Pro Rounded",-apple-system,system-ui,sans-serif;font-size:19px}
-.brand img{width:34px;height:34px;border-radius:8px}
-nav{margin-left:auto;display:flex;gap:18px}
-nav a{color:var(--ice);text-decoration:none;font-weight:600;font-size:15px}
-nav a[aria-current=page]{color:var(--mint)}
-.hero{max-width:760px;margin:0 auto;padding:30px 22px 52px;position:relative;overflow:hidden}
-.hero h1{margin:0 0 8px;font-family:ui-rounded,"SF Pro Rounded",-apple-system,system-ui,sans-serif;
-  font-weight:900;font-size:clamp(32px,7vw,48px);line-height:1.05;letter-spacing:-.02em;color:#fff;max-width:14ch}
-.hero p{margin:0;color:var(--ice);max-width:46ch}
-/* The one memorable element: a tilted plank with a ball, like the game itself. */
-.seesaw{position:relative;height:70px;margin-top:30px;max-width:420px}
-.plank{position:absolute;left:0;right:0;top:34px;height:14px;border-radius:7px;background:var(--wood);
-  box-shadow:inset 0 -4px 0 var(--edge);transform:rotate(-4deg);transform-origin:50% 50%}
-.ball{position:absolute;top:2px;left:62%;width:30px;height:30px;border-radius:50%;background:var(--mint)}
-.pivot{position:absolute;left:calc(50% - 14px);top:46px;width:0;height:0;border-left:14px solid transparent;
-  border-right:14px solid transparent;border-bottom:22px solid var(--ice)}
-@media (prefers-reduced-motion:no-preference){
-  .plank{animation:tilt 5s ease-in-out infinite alternate}
-  .ball{animation:roll 5s ease-in-out infinite alternate}
-  @keyframes tilt{from{transform:rotate(-4deg)}to{transform:rotate(4deg)}}
-  @keyframes roll{from{left:62%;top:2px}to{left:30%;top:2px}}
-}
-main{max-width:760px;margin:0 auto;padding:36px 22px 20px}
-main h2{font-family:ui-rounded,"SF Pro Rounded",-apple-system,system-ui,sans-serif;font-size:24px;
-  line-height:1.25;margin:40px 0 10px}
-main h2:first-child{margin-top:0}
-main h3{font-size:18px;margin:24px 0 4px}
-main p,main li{max-width:68ch}
-.meta{color:var(--muted);font-size:15px}
-.contact{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--wood);
-  border-radius:10px;padding:18px 20px;margin:8px 0 28px}
-.contact strong{display:block;font-size:19px}
-.table-wrap{overflow-x:auto;margin:12px 0}
-table{border-collapse:collapse;width:100%;font-size:15px;background:var(--surface)}
-th,td{text-align:left;vertical-align:top;padding:10px 12px;border:1px solid var(--line)}
-th{background:var(--deep);color:#fff;font-weight:700}
-details{border-bottom:1px solid var(--line);padding:14px 0}
-summary{cursor:pointer;font-weight:700;font-size:18px}
-details p{margin:8px 0 0}
-footer{max-width:760px;margin:0 auto;padding:28px 22px calc(36px + env(safe-area-inset-bottom,0));
-  color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
-.links{display:flex;gap:14px;flex-wrap:wrap;margin:22px 0 0;padding:0;list-style:none}
-.links a{display:inline-block;padding:12px 18px;border-radius:12px;background:var(--mint);color:var(--night);
-  font-weight:800;text-decoration:none}
-@media (max-width:480px){table{font-size:14px}th,td{padding:8px}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+main{max-width:760px;margin:0 auto;padding:40px 22px 64px}
+nav{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:34px;font-size:15px}
+a{color:var(--cyan)}
+.brand{font-weight:900;letter-spacing:.5px;text-decoration:none;color:var(--text)}
+.brand span{color:var(--red)}
+h1{font-size:2.1rem;line-height:1.2;margin:0 0 6px}
+h2{font-size:1.25rem;margin:34px 0 8px}
+.muted{color:var(--muted)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px 22px;margin:18px 0}
+.hero{font-size:3rem;font-weight:900;line-height:1;margin:0}
+.hero span{color:var(--red)}
+footer{margin-top:48px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
